@@ -15,10 +15,10 @@ app.use(bodyParser.json());
 // Database connection
 const pool = mysql.createPool({
     host: 'localhost',      // Your MySQL host
-    user: 'root',           // MySQL username (default is 'root')
-    password: '',           // MySQL password (leave empty if none is set)
+    user: 'mysql',           // MySQL username (default is 'root')
+    password: '1234',           // MySQL password (leave empty if none is set)
     database: 'conference_db', // Your database name
-    port: 3000             // MySQL default port
+    port: 3001            // MySQL default port
 });
 
 app.get('/test-db', async (req, res) => {
