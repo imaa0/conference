@@ -1,3 +1,4 @@
+<!-- Updated index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +46,15 @@
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-secondary {
+            background: #f3f4f6;
+            color: #3b82f6;
+        }
+
+        .btn-secondary:hover {
+            background: #e5e7eb;
         }
 
         /* Hero Section */
@@ -99,6 +109,14 @@
             margin-bottom: 2rem;
             opacity: 0.9;
         }
+
+        .buttons {
+            margin-top: 1.5rem;
+        }
+
+        .buttons .btn {
+            margin-right: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +129,10 @@
         <div class="hero-content">
             <h1 class="hero-title">International Research Conference 2024</h1>
             <p class="hero-subtitle">Join the world's leading researchers and innovators</p>
-            <button class="btn btn-primary" onclick="window.location.href='registration.html';">Register Now</button>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="window.location.href='registration.html';">Register Now</button>
+                <button class="btn btn-secondary" onclick="window.location.href='login.html';">Login</button>
+            </div>
         </div>
     </section>
 

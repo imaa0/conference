@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_conference_db
+    ports:
+      - "3001:3306" # Map MySQL default port to your custom host port
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"  # Root user password
+      MYSQL_DATABASE: "conference_db" # Database to be created
+    volumes:
+      - mysql_data:/var/lib/mysql  # Persist database data
+
+volumes:
+  mysql_data:
